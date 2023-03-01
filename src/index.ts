@@ -2,8 +2,8 @@ import {GraphQLError} from 'graphql';
 import {ApolloServer} from '@apollo/server';
 import {startStandaloneServer} from '@apollo/server/standalone';
 import {readFileSync} from 'fs';
-import {authSign, authVerify} from "./modules/auth/auth.js";
-import {resolvers} from "./schema/resolvers.js";
+import {authSign, authVerify} from "./modules/auth/auth";
+import {resolvers} from "./schema/resolvers";
 
 const typeDefs = readFileSync('./src/schema.graphql', {encoding: 'utf-8'});
 

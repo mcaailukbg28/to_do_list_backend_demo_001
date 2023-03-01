@@ -1,19 +1,19 @@
-import {sign, verify} from 'jsonwebtoken';
-import {User} from "../user/user.js";
+import { sign, verify } from 'jsonwebtoken';
+import { User } from "../user/user";
 
 
-export function authSign(userString: string) {
+function authSign(userString: string) {
 
 }
 
-/**
+/**f
  * 验证用户身份
  * @param token
  */
-export function authVerify(token: string) {
+function authVerify(token: string) {
 
     return new User();
 }
 
-
+export { authSign, authVerify }
 
